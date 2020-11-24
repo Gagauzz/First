@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="width-device-width, initial-scale-1.0" name="viewport">
+
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+	<!--Иконки-->
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+	<header id="header" class="sticky-top">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-example2" >
+			<div class="container-fluid">
+				<a href="index.html" class="mr-3"><img src="img/logo/logo.png" alt="logo"></a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent" >
+					<ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+						<li class="nav-item mr-3">
+							<a href="#" aria-current="page" class="nav-link active">Design Gallery</a>
+						</li>
+						<li class="nav-item mr-3">
+							<a href="#fat" aria-current="page" class="nav-link">List of Architect</a>
+						</li>
+						<li class="nav-item mr-3">
+							<a href="#articles" class="nav-link">Articles</a>
+						</li>
+						<li class="nav-item mr-3">
+							<a href="#how" class="nav-link">How it Works</a>
+						</li>
+					</ul>
+					<form class="d-flex">
+						<input type="search" class="form-control mr-2" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-seccess" type="submit">Search</button>
+					</form>
+					<ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+						<li class="nav-item justufy-content-center">
+							<a href="#" class="nav-link">Sign In</a>		
+						</li>
+						<button onclick="show('block'), hide('show')" class="btn btn-danger ml-3">Sign Up</button>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+	</header>
+
+	<div onclick="show('none')" id="gray"></div>
+	<section id="window" class="bg-light">
+			<div class="row float-right">
+				<p class="close float-right" onclick="show('none')">
+					<i class='bx bx-window-close'></i>
+				</p>
+			</div>
+			<form>
+	            <div class="mb-3">
+	              <label for="exampleInputEmail1" class="form-label">Email address</label>
+	              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+	              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+	            </div>
+	            <div class="mb-3">
+	              <label for="exampleInputPassword1" class="form-label">Password</label>
+	              <input type="password" class="form-control" id="exampleInputPassword1">
+	            </div>
+	            <div class="mb-3 form-check">
+	              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+	              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+	            </div>
+	            <button type="submit" class="btn btn-primary">Sign up</button>
+	        </form>
+	</section>
+	<main>
+		<section id="section" class="section pt-5">
+			<div class="container pt-5">
+				<div class="row">
+					<div class="section-title">
+						<div class="col-lg-8 col-md-10">
+							<p>Build Your Dream <span>House</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6 col-md-4">
+						<div class="subtitle">
+							<p>
+								The first and most trusted marketplace of design & build house in The World. 100% guaranteed Build safe, comfortable and transparent with a project management for the best result
+							</p>
+							<button class="btn" id="btn-red">Free Consultation</button>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<img src="img/house-one.png" class="img-fluid" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<section id="section-2" data-spy="scroll" data-target="#navbar-example2"  data-offset="0" class="section-2">
+		<div id="fat">
+			<div class="container">
+				<div class="title-center">
+					<p>
+						Build professional valuable room for you
+					</p>
+				</div>
+				<div class="row">
+					<div class="col img"><img src="img/rooms/room1.png" alt=""></div>
+					<div class="col img"><img src="img/rooms/room2.png" alt=""></div>
+					<div class="col img"><img src="img/rooms/room3.png" alt=""></div>
+					<div class="col img"><img src="img/rooms/room2.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="section-3" class="section-3">
+		<div id="articles">
+			<div class="container">
+				<div class="title-left">
+					<p>Build your needs with Archmove</p>
+				</div>
+
+				<div class="row">
+					<div class="col-6">
+						<img class="img-fluid vertical-align-center" src="img/needs.png" alt="">
+					</div>
+					
+					<div class="col-6">
+						<div class="needs">
+							<div class="review-credits d-flex align-items-start">
+								<svg width="48" height="56" viewBox="0 0 48 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22.6273 51.9247C10.8481 43.511 3.35716 30.3774 2.0857 15.9972L23.6239 2.35639L45.8748 15.994C44.1284 30.4277 36.3962 43.4887 24.5344 51.9614L23.6066 52.6242L22.6273 51.9247Z" stroke="black" stroke-width="4"/>
+									<path d="M17.5 24.8995L22.508 29.9075L32.4075 20.008" stroke="#FD665E" stroke-width="4"/>
+								</svg>
+
+								<div class="credits ml-5">
+									<p class="name">
+										100% guaranteed project completion
+									</p>
+									<p class="stats">
+										Build safe, comfortable and transparent with a project management application with a joint account.
+									</p>
+								</div>
+							</div>
+
+							<div class="review-credits d-flex align-items-start">
+								<svg width="39" height="48" viewBox="0 0 39 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2 2H37V46H2V2Z" stroke="black" stroke-width="4"/>
+										<path d="M23.2542 38V36.7661C26.3077 36.5017 28 34.9153 28 32.3301C28 30.1267 26.7676 28.7656 24.3487 28.2661L23.2542 28.0507V25.0052C24.0452 25.1423 24.6246 25.818 24.6522 26.5916H27.7425C27.7149 24.2609 25.9858 22.6158 23.2542 22.3416V21H21.9298V22.3318C18.959 22.5668 17.2483 24.1532 17.2483 26.6895C17.2483 28.8341 18.4808 30.2442 20.8353 30.7926L21.9298 31.0472V34.2005C20.9457 34.0927 20.2375 33.4171 20.1915 32.5553H17C17.0092 35.0622 18.8211 36.6192 21.9298 36.7857V38H23.2542ZM24.8545 32.7316C24.8545 33.5639 24.2567 34.1221 23.2542 34.2005V31.2823C24.3303 31.4977 24.8545 31.9775 24.8545 32.7316ZM20.4766 26.3566C20.4766 25.6025 21.0744 25.0444 21.9298 24.9856V27.7667C20.9824 27.5611 20.4766 27.0714 20.4766 26.3566Z" fill="#FD665E"/>
+								</svg>
+
+								<div class="credits ml-5">
+									<p class="name">
+										100% guaranteed project completion
+									</p>
+									<p class="stats">
+										Build safe, comfortable and transparent with a project management application with a joint account.
+									</p>
+								</div>
+							</div>
+
+							<div class="review-credits d-flex align-items-start">
+								<svg width="40" height="53" viewBox="0 0 40 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2 51V17.9097L19.5324 2.62508L38 17.9397V51H2Z" stroke="black" stroke-width="4"/>
+									<circle cx="20" cy="24" r="5" stroke="#FD665E" stroke-width="4"/>
+								</svg>
+
+
+								<div class="credits ml-5">
+									<p class="name">
+										100% guaranteed project completion
+									</p>
+									<p class="stats">
+										Build safe, comfortable and transparent with a project management application with a joint account.
+									</p>
+								</div>
+							</div>
+							<button class="btn mb-5" id="btn-red">Free Consultation</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="section-4" class="section-4">
+		<div class="bg-section-4 mt-5">
+			<div id="how">
+				<div class="container">
+					<div class="title-left">
+						<p>Sound Too Good To Be True?</p>
+					</div>
+
+					<div class="row">
+						<div class="col-3">
+							<img src="img/quotes.png" class="float-right" alt="">
+						</div>
+						<div class="col-9">
+							<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+								
+								<div class="carousel-inner">
+									<div class="carousel-item carousel-text active" data-interval="false">
+										<p class="d-block w-100">
+											We just wanted to thank you for this fantastic website! We are so grateful for being able to advertise our Petite cabin and receive feedback from people from all over the U.S. and even further.
+										</p>
+										<p>
+											<b>Adam Morph</b> — CEO Alfatech
+										</p>
+									</div>
+									<div class="carousel-item carousel-text" data-interval="false">
+										<p class="d-block w-100 ">
+											We just wanted to thank you for this fantastic website! We are so grateful for being able to advertise our Petite cabin and receive feedback from people from all over the U.S. and even further.
+										</p>
+										<p>
+											<b>Adam Morph</b> — CEO Alfatech
+										</p>
+									</div>
+
+								</div>
+
+								
+								
+								<div class="d-flex float-right">
+									<div href="#carouselExampleControls" rol="button" data-slide="prev" class="carousel-slider">
+										<i class='arow bx bx-left-arrow-alt'></i>
+									</div>
+									<div href="#carouselExampleControls" rol="button" data-slide="next" class="carousel-slider">
+										<i class='arrow bx bx-right-arrow-alt'></i>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<img class="img-fluid" src="img/house-two.png" alt="house">
+						</div>
+						<div class="col-6">
+							<div class="title-left float-left mt-5">
+								<p>
+									Realize your dream project with <span>Archmove</span>
+								</p>
+							</div>
+							<button class="btn" id="btn-red">FREE CONSULTATION</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="section-5" class="section-5">
+		<div class="container">
+			<div class="row">
+				<div id="title">
+					<p>
+						Our Partners
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="partners ">
+					<img src="img/partners/first.png" class="cent-img" alt="">
+					<img src="img/partners/second.png" class="cent-img" alt="">
+					<img src="img/partners/three.png" class="cent-img" alt="">
+					<img src="img/partners/fourth.png" class="cent-img" alt="">
+					<img src="img/partners/five.png" class="cent-img"alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer" class="footer">
+			<div class="container">
+				<div class="row bd">
+					<div class="col-lg-6 d-flex">
+						<p class="footer-link mr-5 float-left d-flex mx-sm-auto">About Us</p>
+						<p class="footer-link mr-5 float-left d-flex mx-sm-auto">How It Work</p>
+						<p class="footer-link mr-5 float-left d-flex mx-sm-auto">FAQ</p>
+						<p class="footer-link mr-5 float-left d-flex mx-sm-auto">Contact Us</p>
+						<p class="footer-link mr-5 float-left d-flex mx-sm-auto">Privacy Policy</p>
+					</div>
+					<div class="col-lg-6">
+						<img  class="float-lg-right d-flex mx-auto" src="img/logo/logo.png" alt="">
+					</div>
+				</div>
+			</div>
+	</footer>
+</body>
+<script src="js/main.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</html>
