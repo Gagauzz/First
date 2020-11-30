@@ -6,3 +6,8 @@ function show(state) {
 function hide(state) {
 	document.getElementById('navbarSupportedContent').classList.remove(state);
 }
+
+function callBack(state) {
+	document.getElementById('callBack').style.display = state;
+	document.getElementById('gray').style.display = state;
+}
